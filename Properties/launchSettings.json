@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "VSSlnGen": {
+      "commandName": "Project",
+      "commandLineArgs": "D:\\Code\\WasmWrangler\\WasmWrangler\\"
+    }
+  }
+}
