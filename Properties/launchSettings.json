@@ -2,7 +2,8 @@
   "profiles": {
     "GenSlnVS": {
       "commandName": "Project",
-      "commandLineArgs": "D:\\Code\\WasmWrangler\\WasmWrangler\\"
+      "commandLineArgs": ".",
+      "workingDirectory": "D:\\Code\\WasmWrangler\\WasmWrangler"
     }
   }
 }

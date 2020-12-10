@@ -31,6 +31,9 @@ int Main(string[] args)
         return 1;
     }
 
+    if (!inputDirectory.EndsWith(Path.DirectorySeparatorChar))
+        inputDirectory += Path.DirectorySeparatorChar;
+
     var inputDirectoryName = Path.GetFileName(inputDirectory.TrimEnd(Path.DirectorySeparatorChar));
 
     var outputPath = Path.Combine(inputDirectory, inputDirectoryName + ".sln");
