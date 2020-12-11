@@ -7,8 +7,18 @@
     <LangVersion>9.0</LangVersion>
     <Nullable>enable</Nullable>
 
+    <!-- NuGet package settings -->
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>slngenvs</ToolCommandName>
+
+    <Authors>smack0007</Authors>
+    <Copyright>Copyright © Zachary Snow $([System.DateTime]::Now.ToString(yyyy))</Copyright>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/smack0007/SlnGenVS.git</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/smack0007/SlnGenVS/</PackageProjectUrl>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <PackageTags>visualstudio vs solution sln tool cli</PackageTags>
+    <Description>Creates Visual Studio solution files based on the directory structure.</Description>
   </PropertyGroup>
 
   <!-- Version stuff -->
@@ -23,6 +33,10 @@
     <PackageVersion>$(AssemblyMajorVersion).$(AssemblyMinorVersion).$(AssemblyPatchVersion)</PackageVersion>
     <FileVersion>$(AssemblyMajorVersion).$(AssemblyMinorVersion).$(AssemblyPatchVersion)</FileVersion>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="LICENSE.md" Pack="true" />
+  </ItemGroup>
 
 </Project>
 
